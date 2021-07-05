@@ -1,4 +1,8 @@
 #!/usr/bin/python
 
-print("Hello World")
+import sys
+
+name = sys.argv[1]
+
+print(f"Hello {name}")
 
