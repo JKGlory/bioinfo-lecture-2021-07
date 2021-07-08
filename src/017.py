@@ -14,8 +14,9 @@ with open(file_name, "a") as handle:
 
 
 s = "s1,s2,s3"  #csv, tsv
-data = s.split(",")$
+data = s.split(",")
 print(data) #['s1' ,'s2', 's3']
 
 with open(file_name, "a") as handle:
-    handle.write("**".join(data)+ "\n")
+    handle.write("\t".join(data)+ "\n")
+#   handle.write("**".join(data)+ "\n")
